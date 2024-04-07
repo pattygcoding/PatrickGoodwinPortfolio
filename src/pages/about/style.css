@@ -14,8 +14,20 @@
 .skills {
     font-size: 16px;
     font-weight: 700;
-    margin: 15px 0 20px;
+    margin: 6px 0 6px;
     font-family: 'Raleway';
+
+}
+
+.link {
+    font-weight: 200;
+    margin-left: 6rem;
+    margin-top: 1.3px;
+    text-decoration: underline;
+}
+
+.framework {
+    margin-left: 7.8rem;
 }
 
 @-webkit-keyframes animate-positive {
@@ -73,10 +85,16 @@
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
 }
 
 .skill-item {
+  display: flex;
+  align-items: center;
   margin-right: 20px;
+}
+
+.skill-col {
+    display: flex;
+    margin-bottom: 35px;
 }

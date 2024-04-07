@@ -6,7 +6,9 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
+  languages,
+  frameworks,
+  other_skills,
   services,
 } from "../../content_option";
 
@@ -60,14 +62,55 @@ export const About = () => {
             <h3 className="color_sec py-4">Technical Skills</h3>
           </Col>
           <Col lg="7">
-          <div className="skills-container ">
-            {skills.map((data, i) => {
-              return (
-                <div key={i} className="skill-item">
-                  <h3 className="skills">{data.name}</h3>
-                </div>
-              );
-            })}
+            <h3 className="color_sec py-4">Coding Languages</h3>
+            <div className="skill-col">
+              <div className="skills-container">
+                {languages.map((data, i) => (
+                  <div key={i} className="skill-item">
+                    <h3 className="skills">{data.name}</h3>
+                  </div>
+                ))}
+              </div>
+              <div className="skills-container">
+                {languages.map((data, i) => (
+                  <div key={i} className="skill-item">
+                    {/* Use <a> tag for clickable link */}
+                    <a className="skills link" href={data.link} target="_blank" rel="noopener noreferrer">
+                      Connect Four Example ({data.name})
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <h3 className="color_sec py-4">Frameworks & Formats</h3>
+            <div className="skill-col">
+              <div className="skills-container">
+                {frameworks.map((data, i) => (
+                  <div key={i} className="skill-item">
+                    <h3 className="skills">{data.name}</h3>
+                  </div>
+                ))}
+              </div>
+              <div className="skills-container">
+                {frameworks.map((data, i) => (
+                  <div key={i} className="skill-item">
+                    {/* Use <a> tag for clickable link */}
+                    <a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
+                      {data.name === "React" ? "React Portfolio Website" : `Connect Four Example (${data.name})`}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <h3 className="color_sec py-4">Other Technologies</h3>
+            <div className="skill-col">
+              <div className="skills-container">
+                {other_skills.map((data, i) => (
+                  <div key={i} className="skill-item">
+                    <h3 className="skills">{data.name}</h3>
+                  </div>
+                ))}
+              </div>
             </div>
           </Col>
         </Row>

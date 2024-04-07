@@ -43,65 +43,146 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Java",
-    },
-    {
-        name: "JavaScript",
-    },
-    {
-        name: "TypeScript",
+const languages = [{
+        name: "Assembly",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/assembly",
     },
     {
         name: "C",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c",
     },
     {
         name: "C++",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%2B%2B",
     },
     {
-        name: "C#",
+        name: "C#/.NET",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23",
     },
     {
-        name: "PHP",
+        name: "Fortran",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/fortran",
     },
     {
-        name: "Python",
+        name: "Golang",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/golang",
     },
     {
-         name: "React",
+        name: "Haskell",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/haskell",
     },
     {
-         name: "Node.js",
+         name: "HTML5/CSS3",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/html-css",
     },
     {
-         name: "Gradle",
+         name: "Java",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/java",
+    },
+    {
+         name: "JavaScript",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/node",
+    },
+    {
+         name: "Kotlin",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/kotlin",
+    },
+    {
+         name: "Objective-C",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/objective-c",
+    },
+    {
+         name: "Perl",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/perl",
+    },
+    {
+         name: "PHP",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/php",
+    },
+    {
+         name: "Python",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/python",
+    },
+    {
+         name: "Ruby",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/ruby",
+    },
+    {
+         name: "Rust",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/rust",
+    },
+    {
+         name: "Scala",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/scala",
+    },
+    {
+         name: "Swift",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/swift",
+    },
+    {
+         name: "TypeScript",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/typescript/node",
+    },
+];
+
+const frameworks = [{
+        name: "Angular",
+        link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/typescript/angular",
     },
     {
          name: "JSON",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/python/json",
     },
     {
-         name: "SQL",
+         name: "MongoDB",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql",
     },
     {
-         name: "Jira",
+         name: "MySQL",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mysql",
     },
     {
-         name: "Confluence",
+         name: "Next.js",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/next",
     },
     {
-         name: "Azure DevOps",
+         name: "Node.js",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/node",
     },
     {
-         name: "HTML",
+         name: "NoSQL",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql",
     },
     {
-         name: "CSS",
+         name: "React",
+         link: "https://github.com/pattygcoding/PatrickGoodwinPortfolio",
     },
     {
-         name: "Git",
+         name: "Vue.js",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/vue",
+    },
+];
+
+const other_skills = [{
+        name: "AWS",
     },
     {
-         name: "Linux",
+        name: "Azure DevOps",
+    },
+    {
+        name: "Confluence",
+    },
+    {
+        name: "GraphQL",
+    },
+    {
+        name: "Git",
+    },
+    {
+        name: "Jira",
+    },
+    {
+        name: "Visual Studio",
     },
 ];
 
@@ -133,10 +214,16 @@ const dataportfolio = [{
         suprememc_github_legacy: "https://github.com/pattygcoding/SMC",
     },
     {
+        img: "https://i.imgur.com/khNlkQb.png",
+        description: "Connect Four Language Tree: My implementations and demonstrations of Connect Four across 20 different coding languages & frameworks, including Assembly.",
+        website_github: "https://github.com/pattygcoding/Connect-Four-Language-Tree",
+    },
+    {
         img: "https://i.imgur.com/KI71fuk.jpeg",
         description: "This Website: I created this website myself using JavaScript & React.",
         website_github: "https://github.com/pattygcoding/PatrickGoodwinPortfolio",
     },
+
 ];
 
 const contactConfig = {
@@ -156,7 +243,9 @@ export {
     dataabout,
     dataportfolio,
     worktimeline,
-    skills,
+    languages,
+    frameworks,
+    other_skills,
     services,
     introdata,
     contactConfig,
