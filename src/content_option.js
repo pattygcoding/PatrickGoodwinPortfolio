@@ -245,13 +245,13 @@ const dataportfolio = [{
         suprememc_github_legacy: "https://github.com/pattygcoding/SMC",
     },
     {
+        img: "https://i.imgur.com/kcJD2n2.jpeg",
+        description: "Accelerate Learning: I worked as a full stack software engineer, utilizing PHP with Docker on the back-end, and React with TypeScript on the front-end.",
+    },
+    {
         img: "https://i.imgur.com/khNlkQb.png",
         description: "Connect Four Language Tree: My implementations and demonstrations of Connect Four across 20 different coding languages & frameworks, including Assembly.",
         website_github: "https://github.com/pattygcoding/Connect-Four-Language-Tree",
-    },
-    {
-        img: "https://i.imgur.com/kcJD2n2.jpeg",
-        description: "Accelerate Learning: I worked as a full stack software engineer, utilizing PHP with Docker on the back-end, and React with TypeScript on the front-end.",
     },
     {
         img: "https://i.imgur.com/PCZ2DJ2.jpeg",
