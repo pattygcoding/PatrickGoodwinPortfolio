@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
@@ -12,7 +12,36 @@ import {
   services,
 } from "../../content_option";
 
+
+
+
 export const About = () => {
+  // State to track which row's description is expanded
+  const [expandedRow, setExpandedRow] = useState(null);
+
+  // Function to toggle description visibility for a specific row
+  const toggleDescription = (index) => {
+    setExpandedRow(expandedRow === index ? null : index);
+  };
+
+  // Effect to handle dropdown behavior
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      // Close description if clicked outside the table
+      if (!event.target.closest('.description-row')) {
+        setExpandedRow(null);
+      }
+    };
+
+    // Attach event listener for document click
+    document.addEventListener('click', handleDocumentClick);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []); // Run effect only once on component mount
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -42,19 +71,19 @@ export const About = () => {
             <h3 className="color_sec py-4">Professional Experience</h3>
           </Col>
           <Col lg="7">
-            <table className="table caption-top">
-              <tbody>
-                {worktimeline.map((data, i) => {
-                  return (
-                    <tr key={i}>
-                      <th scope="row">{data.jobtitle}</th>
-                      <td>{data.where}</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+             <table className="table caption-top">
+                                      <tbody>
+                                        {worktimeline.map((data, i) => {
+                                          return (
+                                            <tr key={i}>
+                                              <th scope="row">{data.jobtitle}</th>
+                                              <td>{data.where}</td>
+                                              <td>{data.date}</td>
+                                            </tr>
+                                          );
+                                        })}
+                                      </tbody>
+                                    </table>
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -74,7 +103,6 @@ export const About = () => {
               <div className="skills-container">
                 {languages.map((data, i) => (
                   <div key={i} className="skill-item">
-                    {/* Use <a> tag for clickable link */}
                     <a className="skills link" href={data.link} target="_blank" rel="noopener noreferrer">
                       Connect Four Example ({data.name})
                     </a>
@@ -94,7 +122,6 @@ export const About = () => {
               <div className="skills-container">
                 {frameworks.map((data, i) => (
                   <div key={i} className="skill-item">
-                    {/* Use <a> tag for clickable link */}
                     <a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
                       {data.name === "React" ? "React Portfolio Website" : `Connect Four Example (${data.name})`}
                     </a>

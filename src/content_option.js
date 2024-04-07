@@ -25,21 +25,25 @@ const worktimeline = [{
         jobtitle: "Founder & Full Stack Software Developer",
         where: "SupremeMC",
         date: "2020 - Present",
+        description: "Test",
     },
     {
         jobtitle: "Full Stack Software Engineer",
         where: "Accelerate Learning",
         date: "2023",
+        description: "Test",
     },
     {
         jobtitle: "Lead Web Developer (Student Program)",
         where: "Clemson University",
         date: "2021 - 2022",
+        description: "Test",
     },
     {
         jobtitle: "Desk Supervisor",
         where: "Clemson University",
-            date: "2021 - 2022",
+        date: "2021 - 2022",
+        description: "Test",
     },
 ];
 
@@ -182,7 +186,7 @@ const other_skills = [{
         name: "Jira",
     },
     {
-        name: "Visual Studio",
+        name: "REST APIs",
     },
 ];
 
@@ -217,6 +221,14 @@ const dataportfolio = [{
         img: "https://i.imgur.com/khNlkQb.png",
         description: "Connect Four Language Tree: My implementations and demonstrations of Connect Four across 20 different coding languages & frameworks, including Assembly.",
         website_github: "https://github.com/pattygcoding/Connect-Four-Language-Tree",
+    },
+    {
+        img: "https://i.imgur.com/KI71fuk.jpeg",
+        description: "Accelerate Learning (2023): I worked as a full stack software engineer, utilizing PHP with Docker on the back-end, and React with TypeScript on the front-end.",
+    },
+    {
+        img: "https://i.imgur.com/KI71fuk.jpeg",
+        description: "Clemson Lead Software Engineer (2021-2022): I led a successful team study to develop a website for truck drivers, implementing Agile with Azure DevOps, innovating with MySQL framework, and engineering the website with React.js/TypeScript & Angular.",
     },
     {
         img: "https://i.imgur.com/KI71fuk.jpeg",
