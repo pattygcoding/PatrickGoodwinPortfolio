@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
@@ -16,31 +16,7 @@ import {
 
 
 export const About = () => {
-  // State to track which row's description is expanded
-  const [expandedRow, setExpandedRow] = useState(null);
 
-  // Function to toggle description visibility for a specific row
-  const toggleDescription = (index) => {
-    setExpandedRow(expandedRow === index ? null : index);
-  };
-
-  // Effect to handle dropdown behavior
-  useEffect(() => {
-    const handleDocumentClick = (event) => {
-      // Close description if clicked outside the table
-      if (!event.target.closest('.description-row')) {
-        setExpandedRow(null);
-      }
-    };
-
-    // Attach event listener for document click
-    document.addEventListener('click', handleDocumentClick);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      document.removeEventListener('click', handleDocumentClick);
-    };
-  }, []); // Run effect only once on component mount
 
   return (
     <HelmetProvider>
@@ -66,24 +42,36 @@ export const About = () => {
             </div>
           </Col>
         </Row>
+        <Row className="sec_sp">
+                  <Col lg="5">
+                    <h3 className="color_sec py-4">{dataabout.education_title}</h3>
+                   </Col>
+                   <Col lg="7" className="d-flex align-items-center">
+                     <div>
+                       <h3 className="skills">{dataabout.university}</h3>
+                       <h3 className="skills">{dataabout.degree}</h3>
+                       <h3 className="skills">{dataabout.year}</h3>
+                     </div>
+                   </Col>
+                  </Row>
         <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Professional Experience</h3>
           </Col>
           <Col lg="7">
              <table className="table caption-top">
-                                      <tbody>
-                                        {worktimeline.map((data, i) => {
-                                          return (
-                                            <tr key={i}>
-                                              <th scope="row">{data.jobtitle}</th>
-                                              <td>{data.where}</td>
-                                              <td>{data.date}</td>
-                                            </tr>
-                                          );
-                                        })}
-                                      </tbody>
-                                    </table>
+             <tbody>
+               {worktimeline.map((data, i) => {
+                 return (
+                   <tr key={i}>
+                     <th scope="row">{data.jobtitle}</th>
+                       <td>{data.where}</td>
+                       <td>{data.date}</td>
+                     </tr>
+                     );
+                   })}
+                 </tbody>
+               </table>
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -104,7 +92,7 @@ export const About = () => {
                 {languages.map((data, i) => (
                   <div key={i} className="skill-item">
                     <a className="skills link" href={data.link} target="_blank" rel="noopener noreferrer">
-                      Connect Four Example ({data.name})
+                      My Connect Four Example ({data.name})
                     </a>
                   </div>
                 ))}
@@ -123,7 +111,7 @@ export const About = () => {
                 {frameworks.map((data, i) => (
                   <div key={i} className="skill-item">
                     <a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
-                      {data.name === "React" ? "React Portfolio Website" : `Connect Four Example (${data.name})`}
+                      {data.name === "React" ? "React Portfolio Website" : `My Connect Four Example (${data.name})`}
                     </a>
                   </div>
                 ))}

@@ -20,7 +20,12 @@ const introdata = {
 const dataabout = {
     title: "Personal Summary",
     aboutme: "As an experienced Full Stack Software Developer based in Orlando, FL, I've demonstrated expertise in various technologies, from Java and C++ to React.js and Node.js. With a track record of spearheading projects, including the development of a Java modification program for Minecraft and a rewarding website for truck drivers, I've showcased leadership and innovation. My commitment to excellence is evident in my ability to streamline project management, solve complex problems, and deliver high-quality solutions that enhance user experience and drive organizational success.",
+    education_title: "Education",
+    university: "Clemson University",
+    degree: "Bachelor of Science in Computer Science",
+    year: "Class of 2022",
 };
+
 const worktimeline = [{
         jobtitle: "Founder & Full Stack Software Developer",
         where: "SupremeMC",
@@ -162,6 +167,10 @@ const frameworks = [{
          link: "https://github.com/pattygcoding/PatrickGoodwinPortfolio",
     },
     {
+         name: "SpringBoot",
+         link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/java/springboot",
+    },
+    {
          name: "Vue.js",
          link: "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/vue",
     },
@@ -177,16 +186,34 @@ const other_skills = [{
         name: "Confluence",
     },
     {
+        name: "Docker",
+    },
+    {
+        name: "Eclipse",
+    },
+    {
         name: "GraphQL",
     },
     {
         name: "Git",
     },
     {
+        name: "IntelliJ",
+    },
+    {
         name: "Jira",
     },
     {
-        name: "REST APIs",
+        name: "PHPStorm",
+    },
+    {
+        name: "REST APIs (Learnosity)",
+    },
+    {
+        name: "WordPress",
+    },
+    {
+        name: "Visual Studio",
     },
 ];
 
@@ -223,17 +250,22 @@ const dataportfolio = [{
         website_github: "https://github.com/pattygcoding/Connect-Four-Language-Tree",
     },
     {
-        img: "https://i.imgur.com/KI71fuk.jpeg",
-        description: "Accelerate Learning (2023): I worked as a full stack software engineer, utilizing PHP with Docker on the back-end, and React with TypeScript on the front-end.",
+        img: "https://i.imgur.com/kcJD2n2.jpeg",
+        description: "Accelerate Learning: I worked as a full stack software engineer, utilizing PHP with Docker on the back-end, and React with TypeScript on the front-end.",
+    },
+    {
+        img: "https://i.imgur.com/PCZ2DJ2.jpeg",
+        description: "Good Driver Incentive Program: I led a successful team study to develop a website for truck drivers. Built with Azure DevOps, this project utilized React.js & MySQL.",
+        website_github: "https://github.com/pattygcoding/Good-Driver-Incentive-Program",
     },
     {
         img: "https://i.imgur.com/KI71fuk.jpeg",
-        description: "Clemson Lead Software Engineer (2021-2022): I led a successful team study to develop a website for truck drivers, implementing Agile with Azure DevOps, innovating with MySQL framework, and engineering the website with React.js/TypeScript & Angular.",
-    },
-    {
-        img: "https://i.imgur.com/KI71fuk.jpeg",
-        description: "This Website: I created this website myself using JavaScript & React.",
+        description: "This Website: I created this website myself using React.js, and deployed via GitHub Pages.",
         website_github: "https://github.com/pattygcoding/PatrickGoodwinPortfolio",
+    },
+    {
+        img: "https://i.imgur.com/5oWBUGF.jpeg",
+        description: "Wordpress Travel Site: I am currently working on building a Wordpress website to document my travel experiences.",
     },
 
 ];
