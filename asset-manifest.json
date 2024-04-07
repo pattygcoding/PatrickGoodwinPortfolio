@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/PatrickGoodwinPortfolio/static/css/main.c66ff55c.css",
-    "main.js": "/PatrickGoodwinPortfolio/static/js/main.a452d4c3.js",
+    "main.css": "/PatrickGoodwinPortfolio/static/css/main.9149544c.css",
+    "main.js": "/PatrickGoodwinPortfolio/static/js/main.45d0bcd5.js",
     "index.html": "/PatrickGoodwinPortfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.c66ff55c.css",
-    "static/js/main.a452d4c3.js"
+    "static/css/main.9149544c.css",
+    "static/js/main.45d0bcd5.js"
   ]
 }
