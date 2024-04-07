@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/PatrickGoodwinPortfolio/static/css/main.7ca930a4.css",
-    "main.js": "/PatrickGoodwinPortfolio/static/js/main.be4e7c69.js",
+    "main.js": "/PatrickGoodwinPortfolio/static/js/main.677bae01.js",
     "index.html": "/PatrickGoodwinPortfolio/index.html"
   },
   "entrypoints": [
     "static/css/main.7ca930a4.css",
-    "static/js/main.be4e7c69.js"
+    "static/js/main.677bae01.js"
   ]
 }
