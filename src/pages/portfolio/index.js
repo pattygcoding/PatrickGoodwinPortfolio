@@ -41,7 +41,7 @@ export const Portfolio = () => {
                           <a href={data.suprememc_github_legacy}>GitHub Repository</a>
                         </>
                       ) :
-                      ( i !== 2 && i !== 6 ?
+                      ( i !== 2 ?
                       (
                         <>
                           <a href={data.website_github}>GitHub Repository</a>

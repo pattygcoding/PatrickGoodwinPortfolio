@@ -204,6 +204,9 @@ const other_skills = [{
         name: "Jira",
     },
     {
+        name: "Linux/Unix",
+    },
+    {
         name: "PHPStorm",
     },
     {
@@ -266,6 +269,7 @@ const dataportfolio = [{
     {
         img: "https://i.imgur.com/5oWBUGF.jpeg",
         description: "Wordpress Travel Site: I am currently working on building a Wordpress website to document my travel experiences.",
+        website_github: "https://github.com/pattygcoding/patrickgoodwintravels",
     },
 
 ];
