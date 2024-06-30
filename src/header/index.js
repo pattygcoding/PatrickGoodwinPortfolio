@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
+import t from '../config/text.json';
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -18,7 +18,7 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link  className="navbar-brand nav_ac" to="/">
-            {logotext}
+            PATRICK
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle />
@@ -52,11 +52,11 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a href={socialprofils.linkedin}>LinkedIn</a>
-            <a href={socialprofils.github}>Github</a>
-            <a href={socialprofils.youtube}>YouTube</a>
-            <a href={socialprofils.instagram}>Instagram</a>
-            <a href={socialprofils.tiktok}>TikTok</a>
+            <a href={t.links.linkedin}>LinkedIn</a>
+            <a href={t.links.github}>Github</a>
+            <a href={t.links.youtube}>YouTube</a>
+            <a href={t.links.instagram}>Instagram</a>
+            <a href={t.links.tiktok}>TikTok</a>
             </div>
           </div>
         </div>

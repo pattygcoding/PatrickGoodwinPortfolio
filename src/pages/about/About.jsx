@@ -1,15 +1,7 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-	dataabout,
-	meta,
-	worktimeline,
-	languages,
-	frameworks,
-	other_skills,
-	services,
-} from "../../content_option";
+import t from '../../config/text.json';
 import "./About.css";
 
 const About = () => {
@@ -18,49 +10,49 @@ const About = () => {
 			<Container className="About-header">
 				<Helmet>
 					<meta charSet="utf-8" />
-					<title> About | {meta.title}</title>
-					<meta name="description" content={meta.description} />
+					<title>{t.about.title} | {t.meta.title}</title>
+					<meta name="description" content={t.meta.description} />
 				</Helmet>
 				<Row className="mb-5 mt-3 pt-md-3">
 					<Col lg="8">
-						<h1 className="display-4 mb-4">About Me</h1>
+						<h1 className="display-4 mb-4">{t.about.title}</h1>
 						<hr className="t_border my-4 ml-0 text-left" />
 					</Col>
 				</Row>
 				<Row className="sec_sp">
 					<Col lg="5">
-						<h3 className="color_sec py-4">{dataabout.title}</h3>
+						<h3 className="color_sec py-4">{t.about.personal_summary.title}</h3>
 					</Col>
 					<Col lg="7" className="d-flex align-items-center">
 						<div>
-							<p>{dataabout.aboutme}</p>
+							<p>{t.about.personal_summary.description}</p>
 						</div>
 					</Col>
 				</Row>
 				<Row className="sec_sp">
 					<Col lg="5">
-						<h3 className="color_sec py-4">{dataabout.education_title}</h3>
+						<h3 className="color_sec py-4">{t.about.education.title}</h3>
 					</Col>
 					<Col lg="7" className="d-flex align-items-center">
 						<div>
-							<h3 className="skills">{dataabout.university}</h3>
-							<h3 className="skills">{dataabout.degree}</h3>
-							<h3 className="skills">{dataabout.year}</h3>
+							<h3 className="skills">{t.about.education.university}</h3>
+							<h3 className="skills">{t.about.education.degree}</h3>
+							<h3 className="skills">{t.about.education.graduation_year}</h3>
 						</div>
 					</Col>
 				</Row>
 				<Row className=" sec_sp">
 					<Col lg="5">
-						<h3 className="color_sec py-4">Professional Experience</h3>
+						<h3 className="color_sec py-4">{t.about.professional_experience.title}</h3>
 					</Col>
 					<Col lg="7">
 						<table className="table caption-top">
 							<tbody>
-								{worktimeline.map((data, i) => {
+								{t.about.professional_experience.history.map((data, i) => {
 									return (
 										<tr key={i}>
-											<th scope="row">{data.jobtitle}</th>
-											<td>{data.where}</td>
+											<th scope="row">{data.position}</th>
+											<td>{data.company}</td>
 											<td>{data.date}</td>
 										</tr>
 									);
@@ -71,53 +63,53 @@ const About = () => {
 				</Row>
 				<Row className="sec_sp">
 					<Col lg="5">
-						<h3 className="color_sec py-4">Technical Skills</h3>
+						<h3 className="color_sec py-4">{t.about.technical_skills.title}</h3>
 					</Col>
 					<Col lg="7">
-						<h3 className="color_sec py-4">Coding Languages</h3>
+						<h3 className="color_sec py-4">{t.about.technical_skills.programming_languages.title}</h3>
 						<div className="skill-col">
 							<div className="skills-container">
-								{languages.map((data, i) => (
+								{t.about.technical_skills.programming_languages.list.map((data, i) => (
 									<div key={i} className="skill-item">
 										<h3 className="skills">{data.name}</h3>
 									</div>
 								))}
 							</div>
 							<div className="skills-container">
-								{languages.map((data, i) => (
+								{t.about.technical_skills.programming_languages.list.map((data, i) => (
 									<div key={i} className="skill-item">
 										<a className="skills link" href={data.link} target="_blank" rel="noopener noreferrer">
-											My Connect Four Example ({data.name})
+										{t.about.technical_skills.example_link} ({data.name})
 										</a>
 									</div>
 								))}
 							</div>
 						</div>
-						<h3 className="color_sec py-4">Frameworks & Formats</h3>
+						<h3 className="color_sec py-4">{t.about.technical_skills.frameworks.title}</h3>
 						<div className="skill-col">
 							<div className="skills-container">
-								{frameworks.map((data, i) => (
+								{t.about.technical_skills.frameworks.list.map((data, i) => (
 									<div key={i} className="skill-item">
 										<h3 className="skills">{data.name}</h3>
 									</div>
 								))}
 							</div>
 							<div className="skills-container">
-								{frameworks.map((data, i) => (
+								{t.about.technical_skills.frameworks.list.map((data, i) => (
 									<div key={i} className="skill-item">
 										<a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
-											{data.name === "React" ? "React Portfolio Website" : `My Connect Four Example (${data.name})`}
+											{data.name === "React" ? `${t.about.technical_skills.react_link}` : `${t.about.technical_skills.example_link} (${data.name})`}
 										</a>
 									</div>
 								))}
 							</div>
 						</div>
-						<h3 className="color_sec py-4">Other Technologies</h3>
+						<h3 className="color_sec py-4">{t.about.technical_skills.other_technologies.title}</h3>
 						<div className="skill-col">
 							<div className="skills-container">
-								{other_skills.map((data, i) => (
+								{t.about.technical_skills.other_technologies.list.map((data, i) => (
 									<div key={i} className="skill-item">
-										<h3 className="skills">{data.name}</h3>
+										<h3 className="skills">{data}</h3>
 									</div>
 								))}
 							</div>
@@ -126,10 +118,10 @@ const About = () => {
 				</Row>
 				<Row className="sec_sp">
 					<Col lang="5">
-						<h3 className="color_sec py-4">My Services</h3>
+						<h3 className="color_sec py-4">{t.about.my_services.title}</h3>
 					</Col>
 					<Col lg="7">
-						{services.map((data, i) => {
+						{t.about.my_services.list.map((data, i) => {
 							return (
 								<div className="service_ py-4" key={i}>
 									<h5 className="service__title">{data.title}</h5>
