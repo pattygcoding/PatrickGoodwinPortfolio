@@ -65,8 +65,20 @@
                 "title": "Programming Languages",
                 "list": [
                     {
-                        "name": "Assembly",
-                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/assembly"
+                        "name": "Ada",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/ada"
+                    },
+                    {
+                        "name": "Assembly x64",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/assembly/x64"
+                    },
+                    {
+                        "name": "Assembly x86",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/assembly/x86"
+                    },
+                    {
+                        "name": "Bash",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/bash"
                     },
                     {
                         "name": "C",
@@ -81,12 +93,36 @@
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23"
                     },
                     {
+                        "name": "COBOL",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/cobol"
+                    },
+                    {
+                        "name": "Dart",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/dart"
+                    },
+                    {
+                        "name": "Elixir",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/elixir"
+                    },
+                    {
+                        "name": "Erlang",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/erlang"
+                    },
+                    {
+                        "name": "F#/.NET",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/f%23"
+                    },
+                    {
                         "name": "Fortran",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/fortran"
                     },
                     {
                         "name": "Golang",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/golang"
+                    },
+                    {
+                        "name": "Groovy",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/groovy"
                     },
                     {
                         "name": "Haskell",
@@ -109,12 +145,32 @@
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/kotlin"
                     },
                     {
+                        "name": "Lua",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/lua"
+                    },
+                    {
+                        "name": "Nim",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/nim"
+                    },
+                    {
+                        "name": "OCaml",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/ocaml"
+                    },
+                    {
                         "name": "Perl",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/perl"
                     },
                     {
                         "name": "PHP",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/php"
+                    },
+                    {
+                        "name": "Powershell",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/powershell"
+                    },
+                    {
+                        "name": "Prolog",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/prolog"
                     },
                     {
                         "name": "Python",
@@ -139,6 +195,18 @@
                     {
                         "name": "TypeScript",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/typescript/node"
+                    },
+                    {
+                        "name": "V",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/v"
+                    },
+                    {
+                        "name": "VB.NET",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/VB.NET"
+                    },
+                    {
+                        "name": "Zig",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/zig"
                     }
                 ]
             },
@@ -146,44 +214,92 @@
                 "title": "Frameworks & Formats",
                 "list": [
                     {
-                        "name": "Angular",
+                        "name": "Angular (TypeScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/typescript/angular"
                     },
                     {
-                        "name": "JSON",
+                        "name": "Blazor (C#/.NET)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourBlazor"
+                    },
+                    {
+                        "name": "Django (Python)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/python/django/connect_four"
+                    },
+                    {
+                        "name": "Entity Frameworks (C#/.NET)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourEF"
+                    },
+                    {
+                        "name": "Fyne (Golang)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/golang/fyne"
+                    },
+                    {
+                        "name": "JSON (Python)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/python/json"
                     },
                     {
-                        "name": "MongoDB",
+                        "name": "LINQ (C#/.NET)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourLinq"
+                    },
+                    {
+                        "name": "Minimax AI (Python)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/python/ai"
+                    },
+                    {
+                        "name": "MongoDB (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql"
                     },
                     {
-                        "name": "MySQL",
+                        "name": "MySQL (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mysql"
                     },
                     {
-                        "name": "Next.js",
+                        "name": "Next (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/next"
                     },
                     {
-                        "name": "Node.js",
+                        "name": "Node (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/node"
                     },
                     {
-                        "name": "NoSQL",
+                        "name": "Node (TypeScript)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/typescript/node"
+                    },
+                    {
+                        "name": "NoSQL (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql"
                     },
                     {
-                        "name": "React",
+                        "name": "React (JavaScript)",
                         "link": "https://github.com/pattygcoding/PatrickGoodwinPortfolio"
                     },
                     {
-                        "name": "SpringBoot",
+                        "name": "Ruby on Rails",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/ruby/rails"
+                    },
+                    {
+                        "name": "SpringBoot (Java)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/java/springboot"
                     },
                     {
-                        "name": "Vue.js",
+                        "name": "Vue (JavaScript)",
                         "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/javascript/vue"
+                    },
+                    {
+                        "name": "Windows Library (C)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c/windows"
+                    },
+                    {
+                        "name": "Windows Library (C++)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%2B%2B/windows"
+                    },
+                    {
+                        "name": "Windows Presentation Foundation (C#/.NET)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourWPF"
+                    },
+                    {
+                        "name": "Windows Presentation Foundation (VB.NET)",
+                        "link": "https://github.com/pattygcoding/Connect-Four-Language-Tree/tree/main/vbnet/ConnectFourWPF"
                     }
                 ]
             },
@@ -191,18 +307,27 @@
                 "title": "Other Technologies",
                 "list": [
                     "AWS",
+                    "Azure Data Studio",
                     "Azure DevOps",
                     "Confluence",
                     "Docker",
                     "GraphQL",
                     "Git",
+                    "GitHub",
+                    "GitHub Pages",
+                    "GraphQL",
                     "IntelliJ",
                     "Jira",
                     "Linux/Unix",
+                    "Microsoft SQL Server",
+                    "MySQL Workbench",
                     "PHPStorm",
-                    "REST APIs (Learnosity)",
-                    "WordPress",
-                    "Visual Studio"
+                    "REST APIs",
+                    "SonarCloud",
+                    "Ubuntu",
+                    "Visual Studio",
+                    "Visual Studio Code",
+                    "WordPress"
                 ]
             }
         },

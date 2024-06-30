@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Table } from "react-bootstrap";
 import t from '../../config/text.json';
 import "./About.css";
 
@@ -67,53 +67,57 @@ const About = () => {
 					</Col>
 					<Col lg="7">
 						<h3 className="color_sec py-4">{t.about.technical_skills.programming_languages.title}</h3>
-						<div className="skill-col">
-							<div className="skills-container">
+						<Table hover>
+							<thead>
+								<tr>
+									<th>Programming Language</th>
+									<th>Link</th>
+								</tr>
+							</thead>
+							<tbody>
 								{t.about.technical_skills.programming_languages.list.map((data, i) => (
-									<div key={i} className="skill-item">
-										<h3 className="skills">{data.name}</h3>
-									</div>
+									<tr key={i}>
+										<td>{data.name}</td>
+										<td>
+											<a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
+												{t.about.technical_skills.example_link} - {data.name}
+											</a>
+										</td>
+									</tr>
 								))}
-							</div>
-							<div className="skills-container">
-								{t.about.technical_skills.programming_languages.list.map((data, i) => (
-									<div key={i} className="skill-item">
-										<a className="skills link" href={data.link} target="_blank" rel="noopener noreferrer">
-										{t.about.technical_skills.example_link} ({data.name})
-										</a>
-									</div>
-								))}
-							</div>
-						</div>
+							</tbody>
+						</Table>
 						<h3 className="color_sec py-4">{t.about.technical_skills.frameworks.title}</h3>
-						<div className="skill-col">
-							<div className="skills-container">
+						<Table hover>
+							<thead>
+								<tr>
+									<th>Framework</th>
+									<th>Link</th>
+								</tr>
+							</thead>
+							<tbody>
 								{t.about.technical_skills.frameworks.list.map((data, i) => (
-									<div key={i} className="skill-item">
-										<h3 className="skills">{data.name}</h3>
-									</div>
+									<tr key={i}>
+										<td>{data.name}</td>
+										<td>
+											<a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
+												{data.name === "React" ? t.about.technical_skills.react_link : `${t.about.technical_skills.example_link} - ${data.name}`}
+											</a>
+										</td>
+									</tr>
 								))}
-							</div>
-							<div className="skills-container">
-								{t.about.technical_skills.frameworks.list.map((data, i) => (
-									<div key={i} className="skill-item">
-										<a className="skills link framework" href={data.link} target="_blank" rel="noopener noreferrer">
-											{data.name === "React" ? `${t.about.technical_skills.react_link}` : `${t.about.technical_skills.example_link} (${data.name})`}
-										</a>
-									</div>
-								))}
-							</div>
-						</div>
+							</tbody>
+						</Table>
 						<h3 className="color_sec py-4">{t.about.technical_skills.other_technologies.title}</h3>
-						<div className="skill-col">
-							<div className="skills-container">
+						<Table hover>
+							<tbody>
 								{t.about.technical_skills.other_technologies.list.map((data, i) => (
-									<div key={i} className="skill-item">
-										<h3 className="skills">{data}</h3>
-									</div>
+									<tr key={i}>
+										<td>{data}</td>
+									</tr>
 								))}
-							</div>
-						</div>
+							</tbody>
+						</Table>
 					</Col>
 				</Row>
 				<Row className="sec_sp">

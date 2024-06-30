@@ -55,15 +55,13 @@
     padding-bottom: 4px;
 }
 
-
-/*! CSS Used keyframes */
-
 @-webkit-keyframes fadeInUp {
     0% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
+
     to {
         opacity: 1;
         -webkit-transform: translateZ(0);
@@ -77,6 +75,7 @@
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
+
     to {
         opacity: 1;
         -webkit-transform: translateZ(0);
@@ -85,16 +84,70 @@
 }
 
 .skills-container {
-  display: block;
+    display: block;
 }
 
 .skill-item {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
 .skill-col {
     display: flex;
     margin-bottom: 35px;
+}
+
+.skills-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-item {
+    margin: 0;
+    padding: 0;
+}
+
+.link.framework {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /* Ensure it doesn't take extra space */
+    color: white !important;
+    /* Ensure link text is white */
+    text-decoration: underline !important;
+    /* Ensure links are underlined */
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    /* Align text vertically in the middle */
+    color: white !important;
+    /* Ensure table text is white */
+    background-color: black;
+    /* Ensure background is black for better contrast */
+}
+
+.table {
+    width: 100%;
+    /* Ensure table takes full width */
+}
+
+.table a {
+    text-decoration: underline !important;
+    /* Ensure links are underlined */
+    color: white !important;
+    /* Ensure link text is white */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .85);
+    /* Ensure background color for striped rows */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, .95);
+    /* Ensure background color for hovered rows */
 }
