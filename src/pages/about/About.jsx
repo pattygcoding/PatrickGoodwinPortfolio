@@ -1,51 +1,36 @@
 import React from 'react';
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col, Table } from "react-bootstrap";
-import t from '../../config/text.json';
+import { HelmetProvider } from "react-helmet-async";
+import { Container, Col, Table } from "react-bootstrap";
+import { PageHeader } from '@/components/page-header';
+import { TabLabel } from '@/components/tab-label';
+import t from '@/config/text.json';
 import "./About.css";
 
 const About = () => {
 	return (
 		<HelmetProvider>
-			<Container className="About-header">
-				<Helmet>
-					<meta charSet="utf-8" />
-					<title>{t.about.title} | {t.meta.title}</title>
-					<meta name="description" content={t.meta.description} />
-				</Helmet>
-				<Row className="mb-5 mt-3 pt-md-3">
-					<Col lg="8">
-						<h1 className="display-4 mb-4">{t.about.title}</h1>
-						<hr className="t_border my-4 ml-0 text-left" />
-					</Col>
-				</Row>
-				<Row className="sec_sp">
-					<Col lg="5">
-						<h3 className="color_sec py-4">{t.about.personal_summary.title}</h3>
-					</Col>
-					<Col lg="7" className="d-flex align-items-center">
-						<div>
-							<p>{t.about.personal_summary.description}</p>
-						</div>
-					</Col>
-				</Row>
-				<Row className="sec_sp">
-					<Col lg="5">
-						<h3 className="color_sec py-4">{t.about.education.title}</h3>
-					</Col>
-					<Col lg="7" className="d-flex align-items-center">
+			<Container>
+				<TabLabel label={t.about.title} />
+				<PageHeader label={t.about.title} />
+				<Col className="sec_sp">
+					<h3 className="color_sec py-4">{t.about.personal_summary.title}</h3>
+					<p className="word_preserve">{t.about.personal_summary.description}</p>
+				</Col>
+				<Col className="sec_sp">
+					<h3 className="color_sec py-4">{t.about.education.title}</h3>
+					<Col className="d-flex align-items-center">
 						<div>
 							<h3 className="skills">{t.about.education.university}</h3>
 							<h3 className="skills">{t.about.education.degree}</h3>
 							<h3 className="skills">{t.about.education.graduation_year}</h3>
 						</div>
 					</Col>
-				</Row>
-				<Row className=" sec_sp">
-					<Col lg="5">
+				</Col>
+				<Col className=" sec_sp">
+					<Col>
 						<h3 className="color_sec py-4">{t.about.professional_experience.title}</h3>
 					</Col>
-					<Col lg="7">
+					<Col>
 						<table className="table caption-top">
 							<tbody>
 								{t.about.professional_experience.history.map((data, i) => {
@@ -60,12 +45,12 @@ const About = () => {
 							</tbody>
 						</table>
 					</Col>
-				</Row>
-				<Row className="sec_sp">
-					<Col lg="5">
+				</Col>
+				<Col className="sec_sp">
+					<Col>
 						<h3 className="color_sec py-4">{t.about.technical_skills.title}</h3>
 					</Col>
-					<Col lg="7">
+					<Col>
 						<h3 className="color_sec py-4">{t.about.technical_skills.programming_languages.title}</h3>
 						<Table hover>
 							<thead>
@@ -119,12 +104,12 @@ const About = () => {
 							</tbody>
 						</Table>
 					</Col>
-				</Row>
-				<Row className="sec_sp">
+				</Col>
+				<Col className="sec_sp">
 					<Col lang="5">
 						<h3 className="color_sec py-4">{t.about.my_services.title}</h3>
 					</Col>
-					<Col lg="7">
+					<Col>
 						{t.about.my_services.list.map((data, i) => {
 							return (
 								<div className="service_ py-4" key={i}>
@@ -134,7 +119,7 @@ const About = () => {
 							);
 						})}
 					</Col>
-				</Row>
+				</Col>
 			</Container>
 		</HelmetProvider>
 	);

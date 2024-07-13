@@ -1,5 +1,10 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: 1rem;
+}
+
+.word_preserve {
+    word-break: keep-all;
+    hyphens: none;
 }
 
 .table td,
@@ -16,7 +21,6 @@
     font-weight: 700;
     margin: 6px 0 6px;
     font-family: 'Raleway';
-
 }
 
 .link {
@@ -113,41 +117,30 @@
     margin: 0;
     padding: 0;
     display: inline-block;
-    /* Ensure it doesn't take extra space */
     color: white !important;
-    /* Ensure link text is white */
     text-decoration: underline !important;
-    /* Ensure links are underlined */
 }
 
 .table td,
 .table th {
     vertical-align: middle;
-    /* Align text vertically in the middle */
     color: white !important;
-    /* Ensure table text is white */
     background-color: black;
-    /* Ensure background is black for better contrast */
 }
 
 .table {
     width: 100%;
-    /* Ensure table takes full width */
 }
 
 .table a {
     text-decoration: underline !important;
-    /* Ensure links are underlined */
     color: white !important;
-    /* Ensure link text is white */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, .85);
-    /* Ensure background color for striped rows */
 }
 
 .table-hover tbody tr:hover {
     background-color: rgba(0, 0, 0, .95);
-    /* Ensure background color for hovered rows */
 }

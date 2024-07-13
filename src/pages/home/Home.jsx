@@ -1,19 +1,16 @@
 import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
+import { TabLabel } from '@/components/tab-label';
 import { Link } from "react-router-dom";
-import t from '../../config/text.json';
+import t from '@/config/text.json';
 import "./Home.css";
 
 const Home = () => {
 	return (
 		<HelmetProvider>
 			<section id="home" className="home">
-				<Helmet>
-					<meta charSet="utf-8" />
-					<title>{t.home.title} | {t.meta.title}</title>
-					<meta name="description" content={t.meta.description} />
-				</Helmet>
+				<TabLabel label={t.home.title} />
 				<div className="intro_sec d-block d-lg-flex align-items-center ">
 					<div
 						className="h_bg-image order-1 order-lg-2 h-100 home_img"
